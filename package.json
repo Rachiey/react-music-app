@@ -7,7 +7,7 @@
     "test": "jest --env=jsdom --watch --setupFilesAfterEnv ./src/test/setupTests.js",
     "coverage": "jest --env=jsdom --setupFilesAfterEnv ./src/test/setupTests.js --coverage --watchAll=false",
     "dev": "webpack serve --mode development --config config/dev.webpack.config.js",
-    "build": "webpack --mode production",
+    "build": "webpack --config config/prod.webpack.config.js",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
