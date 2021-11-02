@@ -1,0 +1,18 @@
+.like {
+    display: flex;
+    cursor:pointer;
+    margin-left: 115px;
+    margin-bottom: 50px;
+}
+
+p {
+    margin-right: 10px;
+}
+
+span:hover {
+    cursor: pointer;
+}
+
+span {
+    font-size: 30px;
+}
