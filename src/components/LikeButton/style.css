@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
 .like {
     display: flex;
     cursor:pointer;
     align-items: center;
     margin-left: 65px;
-    position:relative
+    position:relative;
+    font-family: 'Raleway', sans-serif;
 }
 
 p {

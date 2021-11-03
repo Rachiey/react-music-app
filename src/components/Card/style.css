@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
 .card {
     height: 150px;
     width: 150px;
@@ -8,6 +10,7 @@
     font-family: monospace;
     display: grid;
     margin-top: 100px;
+    font-family: 'Raleway', sans-serif;
 }
 
 

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import axios from 'axios';
+import './style.css';
 // import { artists } from '../Artists'
 
 export const Lyrics= ({ close, artistName, songTitle }) => {
@@ -26,7 +27,7 @@ export const Lyrics= ({ close, artistName, songTitle }) => {
 
 return (
     <>
-    <span onClick={close} style={{cursor: "pointer"}}>x</span>
+    <span onClick={close} style={{cursor: "pointer"}}>Hide Lyrics</span>
     { lyrics ?
         <>
         <p>{lyrics}</p>
