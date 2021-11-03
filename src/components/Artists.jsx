@@ -1,6 +1,6 @@
 import React from 'react';
-// import { Artist } from './Artist';
 import { Card } from './Card';
+import { LikeButton } from './LikeButton'
 
 const artists = [
     { artistName: 'ABBA', musicType: 'Pop',  intro: 'ABBA are a Swedish pop group formed in Stockholm in 1972.' },
@@ -8,7 +8,15 @@ const artists = [
 ]
 
 export const Artists = () => {
-    const renderArtists = () => artists.map((p, i) => <Card key ={i} artistName={p.artistName} musicType={p.musicType} intro ={p.intro}/>);
+    const renderArtists = () => artists.map((p, i) => {
+        return (
+            <> 
+            <Card key ={i} artistName={p.artistName} musicType={p.musicType} intro ={p.intro}/>
+            <LikeButton />
+            </>
+        )
+    });
+
 
     return (
         <section id="artists">

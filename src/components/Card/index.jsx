@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './style.css';
+import {LikeButton} from '../LikeButton'
 
 export const Card = ({size, artistName, musicType, intro }) => {
     const [ showIntro, setShowIntro ] = useState(false);
@@ -15,6 +16,7 @@ export const Card = ({size, artistName, musicType, intro }) => {
             <h3>{artistName}</h3>
             <em>{musicType}</em>
             <h4> {showIntro ? intro: "See more..."}</h4>
+            {/* <LikeButton /> */}
         </div>
     )
 }
