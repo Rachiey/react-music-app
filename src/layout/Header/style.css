@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
 nav {
     width: 100vw;
-    position: sticky;
+    position: fixed;
+    top: 0;
     background-color: black;
-    padding: 40px;
+    padding: 30px;
     display: block;
     justify-content: space-around;
     color: white;
- 
+    font-family: 'Raleway', sans-serif;
     text-align:right;
     
 }
@@ -17,20 +20,24 @@ nav {
     text-align: center;
     margin-left: 100px;
     font-size: 30px;
-
 }
+
 
 a {
     text-decoration: none;
     color: white;
-    margin: 20px;
     float: right;
     margin-right: 100px;
+    font-size: 15px;
     
 }
 
 a:hover {
     color: #1ED761;
+}
+
+.notify:hover {
+    color: white;
 }
 
 .current {
@@ -39,5 +46,22 @@ a:hover {
 }
 
 #back-button {
-    color: red;
+    background-color: transparent;
+    font-family: 'Raleway', sans-serif;
+    display:block;
+    padding:0.5em 3em;
+    border:0.16em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-weight:400;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.15s;
 }
+
+#back-button:hover {
+    color:#DDDDDD;
+    border-color:#1ED761;
+} 
