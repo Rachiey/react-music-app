@@ -1,8 +1,9 @@
 .like {
     display: flex;
     cursor:pointer;
-    margin-left: 115px;
-    margin-bottom: 50px;
+    align-items: center;
+    margin-left: 65px;
+    position:relative
 }
 
 p {

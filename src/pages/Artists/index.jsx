@@ -32,8 +32,9 @@ export const Artists = () => {
         <section id="artists">
             <h2>Choose an artist:</h2>
             <ol>
+                <div className= "grid">
                 { renderArtists() } 
-                
+                </div>
             </ol>
 
         </section>
