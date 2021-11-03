@@ -6,9 +6,10 @@ import './style.css'
 export const Header = () => {
     return(
         <nav>
+            <NavLink className="notify" exact to='/'>❍ Notify</NavLink>
             <NavLink exact to='/'>Home</NavLink>
             <NavLink to='/artists'>Artists</NavLink>
-            <BackButton />
+            <BackButton className="backButton" />
         </nav>
     )
 };
