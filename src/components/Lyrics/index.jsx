@@ -1,13 +1,15 @@
 import React, { useEffect } from 'react';
 import axios from 'axios';
+// import { artists } from '../Artists'
 
-export const Lyrics= ({ close }) => {
+export const Lyrics= ({ close, artistName, songTitle }) => {
     const [ lyrics, setLyrics ] = React.useState();
     useEffect(() => {
         async function showLyrics() {
             try {
                 let opts = { headers: {'Accept': 'application/json'} }
-                let { data } = await axios.get('https://api.lyrics.ovh/v1/abba/mamma-mia', opts)
+                let { data } = await axios.get(`https://api.lyrics.ovh/v1/${artistName}/${songTitle}`, opts)
+                console.log(data)
                 setLyrics(data['lyrics']);
             } catch (err) {
                 console.warn(err);
