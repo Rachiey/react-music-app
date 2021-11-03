@@ -37,8 +37,10 @@ h1.line2 {
     width: 250px;
     background-color: #1ED761;
     border-radius: 50%;
-    margin-right: 200px;
+    margin-right: 150px;
+    margin-top: 100px;
     float: left;
+    position:fixed;
 
   }
 
