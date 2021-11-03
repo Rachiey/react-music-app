@@ -5,12 +5,13 @@ import { Lyrics } from '../../components/Lyrics'
 
 
 const artists = [
-    { artistName: 'ABBA', musicType: 'Pop',  intro: 'ABBA are a Swedish pop group formed in Stockholm in 1972.', songTitle: 'mamma-mia' },
-    { artistName: 'Queen', musicType: 'Rock', intro: 'Queen are a British rock band formed in London in 1970.', songTitle: 'bohemian-rhapsody' }
+    { artistName: 'ABBA', musicType: 'Pop',  intro: 'ABBA are a Swedish pop group formed in Stockholm in 1972.', songTitle: 'mamma-mia', showLyrics: false },
+    { artistName: 'Queen', musicType: 'Rock', intro: 'Queen are a British rock band formed in London in 1970.', songTitle: 'bohemian-rhapsody', showLyrics: false }
 ]
 
 
 export const Artists = () => {
+
     const [showLyrics, setShowLyrics] = useState(false);
     const toggleLyrics = () => setShowLyrics (prevState => !prevState);
 

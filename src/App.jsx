@@ -1,13 +1,15 @@
 import React from 'react';
+import { Header } from './layout';
 import { Switch, Route } from 'react-router-dom';
 import * as Pages from './pages';
 
 
 const App = () => {
     return (
-    <div>
+    <>
+        <Header />
         
-      <Switch>
+        <Switch>
         <Route exact path='/'>
           <Pages.Home />
         </Route>
@@ -16,10 +18,10 @@ const App = () => {
           <Pages.Artists />
         </Route>
 
-      </Switch>
+        </Switch>
         
   
-    </div>
+    </>
     )
 };
 
