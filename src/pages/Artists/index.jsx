@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-import { Card } from './Card';
-import { LikeButton } from './LikeButton'
-import { Lyrics } from './Lyrics'
-
-
+import { Card } from '../../components/Card';
+import { LikeButton } from '../../components/LikeButton'
+import { Lyrics } from '../../components/Lyrics'
 
 
 const artists = [
@@ -21,9 +19,9 @@ export const Artists = () => {
             <> 
             <Card key ={i} artistName={p.artistName} musicType={p.musicType} intro ={p.intro}/>
             <LikeButton />
-            <article aria-label='lyrics' id="fun" style={{margin: "10px", color: "pink"}}>
+            <div aria-label='lyrics' style={{margin: "10px", color: "pink"}}>
           { showLyrics ? <Lyrics close={toggleLyrics} artistName={p.artistName} songTitle={p.songTitle}/> : <button onClick={toggleLyrics}>Get Lyrics!</button>}
-          </article>
+          </div>
             </>
         )
     });
