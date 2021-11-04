@@ -9,11 +9,6 @@
     margin: 0 !important;
 }
 
-
-span:hover {
-    cursor: pointer;
-}
-
 span {
     display: flex;
     font-size: 50px;
@@ -22,3 +17,4 @@ span {
     display:grid;
 
 }
+
