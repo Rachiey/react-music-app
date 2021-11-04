@@ -1,5 +1,6 @@
 body {
     background-color: #1f1818;
+  
 }
 p {
     padding-top: 30px;
@@ -9,7 +10,7 @@ p {
 }
 
 h1.artistTitle {
-    margin-top: 175px;
+    margin-top: 135px;
     margin-bottom: 0 !important;
     text-align: center;
     font-family: 'Raleway', sans-serif;
@@ -20,7 +21,7 @@ h1.artistTitle {
 
 div > div {
     padding: 10px;
-    background-color: #1f1818;
+    /* background-color: #1f1818; */
     align-items: center;
     margin: auto;
 }
@@ -29,5 +30,13 @@ section {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: space-evenly;
+
+}
+
+
+.spacer
+{
+    width: 100vw;
+    padding: 30px;
+
 }
