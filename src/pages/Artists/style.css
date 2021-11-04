@@ -1,12 +1,16 @@
+p {
+    padding-top: 30px;
+    padding: 15px;
+    padding-left: 75px;
+    font-size: 15px;
+}
+
 div > div {
     padding: 10px;
     background-color: #1f1818;
     align-items: center;
     margin: auto;
 
-
-
-  
     
 }
 
