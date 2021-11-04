@@ -73,3 +73,12 @@ h1.author {
     float: right;
     margin-top: -500px !important;
 }
+
+h2 {
+    margin-top: 135px;
+    margin-bottom: 0 !important;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #1ED761;
+}

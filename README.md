@@ -1,0 +1,1 @@
+Navigate to main file and npm install 
