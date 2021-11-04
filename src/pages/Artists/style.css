@@ -1,12 +1,15 @@
 div > div {
     padding: 10px;
     background-color: #1f1818;
-    /* width: fit-content; */
+    align-items: center;
+    margin: 0 !important;
+
 
    
     
   }
 section {
+    margin-top: 100px;
     display: grid;
     grid-gap: 5px;
     grid-template-columns: repeat(3, 1fr);

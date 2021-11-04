@@ -7,10 +7,11 @@
     color: white;
     padding: 20px;
     opacity: 0.6;
-    font-family: monospace;
     display: grid;
-    margin-top: 100px;
+    margin-top: 200px;
+    font-size: 12px;
     font-family: 'Raleway', sans-serif;
+    align-content: center;
 }
 
 

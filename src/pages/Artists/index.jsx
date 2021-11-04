@@ -19,9 +19,9 @@ export const Artists = () => {
         return (
             <div key ={i} className="artists">
                 <div>
-                    <Card aristName={p.artistName} musicType={p.musicType} intro={p.intro} />
+                    <Card artistName={p.artistName} musicType={p.musicType} intro={p.intro} />
                     <LikeButton />
-                    <div aria-label='lyrics' style={{margin: "10px", color: "white", whiteSpace: "pre-wrap"}}>
+                    <div aria-label='lyrics' style={{margin: "10px", color: "white", whiteSpace: "pre-wrap", fontFamily: "Helvetica"}}>
                     <Lyrics p={p}/>
                     </div>
                 </div>

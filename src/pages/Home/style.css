@@ -42,7 +42,7 @@ h1.line2 {
     float: left;
     position:fixed;
 
-  }
+}
 
 
 .circleTwo {
@@ -52,7 +52,5 @@ h1.line2 {
     border-radius: 50%;
     margin-right: 300;
     float: right;
-    margin-top: -500px;
- 
-
-  }
+    margin-top: -500px !important;
+}
