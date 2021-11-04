@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
-import { Card } from '../../components/Card';
-import { LikeButton } from '../../components/LikeButton'
-import { Lyrics } from '../../components/Lyrics'
-
+import React from 'react';
+import { Card, LikeButton, Lyrics } from '../../components/';
+import './style.css';
 
 const artists = [
     { artistName: 'ABBA', musicType: 'Pop',  intro: 'ABBA are a Swedish pop group formed in Stockholm in 1972.', songTitle: 'mamma-mia', showLyrics: false },
@@ -13,34 +11,27 @@ const artists = [
     { artistName: 'Linkin Park', musicType: 'Rock', intro: 'Linkin Park is an American rock band from Agoura Hills, California.', songTitle: 'numb', showLyrics: false },
 ]
 
+{/* <div aria-label='lyrics' style={{margin: "10px", color: "#1ED761", whiteSpace: "pre-wrap"}}> */}
+// </div>
 
 export const Artists = () => {
-
-    const [showLyrics, setShowLyrics] = useState(false);
-    const toggleLyrics = () => setShowLyrics (prevState => !prevState);
-
     const renderArtists = () => artists.map((p, i) => {
         return (
-            <> 
-            <Card key ={i} artistName={p.artistName} musicType={p.musicType} intro ={p.intro}/>
-            <LikeButton />
-            <div aria-label='lyrics' style={{margin: "10px", color: "#1ED761", whiteSpace: "pre-wrap"}}>
-          { showLyrics ? <Lyrics close={toggleLyrics} artistName={p.artistName} songTitle={p.songTitle}/> : <button onClick={toggleLyrics}>Get Lyrics!</button>}
-          </div>
-            </>
+            <div key ={i} className="artists">
+                <div>
+                    <Card aristName={p.artistName} musicType={p.musicType} intro={p.intro} />
+                    <LikeButton />
+                    <div aria-label='lyrics' style={{margin: "10px", color: "white", whiteSpace: "pre-wrap"}}>
+                    <Lyrics p={p}/>
+                    </div>
+                </div>
+            </div>
         )
     });
 
-
     return (
         <section id="artists">
-            <h2>Choose an artist:</h2>
-            <ol>
-                <div className= "grid">
-                { renderArtists() } 
-                </div>
-            </ol>
-
+            { renderArtists() }
         </section>
     )
 }

@@ -6,12 +6,11 @@ export const LikeButton = () => {
     const handleClick = () => setLiked((prevLiked) => !prevLiked);
     return (
         <div className="like">
-            <p aria-label="paragraph">Like</p>
             <span
                 onClick={handleClick}
                 role="switch"
-                style={{ color: liked ? 'red' : 'grey' }}
-            >♥</span>
+                style={{ color: liked ? '#1ED761' : 'grey' }}
+            >♡</span>
         </div>
     );
 }

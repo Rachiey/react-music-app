@@ -1,22 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
 
 .like {
-    display: flex;
+    display: inline-flex;
     cursor:pointer;
     align-items: center;
-    margin-left: 65px;
     position:relative;
     font-family: 'Raleway', sans-serif;
+    margin: 0 !important;
 }
 
-p {
-    margin-right: 10px;
-}
 
 span:hover {
     cursor: pointer;
 }
 
 span {
+    display: flex;
     font-size: 30px;
+    transform: scale(1, .8);
+    margin-left: 140px;
+
 }
