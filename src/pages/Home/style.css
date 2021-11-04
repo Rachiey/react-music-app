@@ -22,6 +22,7 @@ h1.line1 {
     font-family: 'Raleway', sans-serif;
     font-size: 90px;
     margin-right: 100px;
+    font-style: italic;
 }
 h1.line2 {
     color: #1ED761;
@@ -33,7 +34,22 @@ h1.line2 {
     font-family: 'Raleway', sans-serif;
     font-size: 90px;
     margin-left: 100px;
+    font-style: italic;
 }
+
+h1.author {
+    color: #1ED761;
+    height: 90%; 
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    margin-left: 100px;
+    font-style: italic;
+}
+
 
 .circle {
     height: 250px;

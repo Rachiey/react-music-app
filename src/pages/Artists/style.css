@@ -1,3 +1,6 @@
+body {
+    background-color: #1f1818;
+}
 p {
     padding-top: 30px;
     padding: 15px;
@@ -5,18 +8,24 @@ p {
     font-size: 15px;
 }
 
+h1.artistTitle {
+    margin-top: 175px;
+    margin-bottom: 0 !important;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 100px;
+    color: #1ED761;
+
+}
+
 div > div {
     padding: 10px;
     background-color: #1f1818;
     align-items: center;
     margin: auto;
-
-    
 }
 
-
 section {
-    margin-top: 100px;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(3, 1fr);

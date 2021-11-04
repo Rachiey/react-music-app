@@ -30,8 +30,12 @@ export const Artists = () => {
     });
 
     return (
+        <>
+        <h1 className="artistTitle"> Artists </h1>
         <section id="artists">
+           
             { renderArtists() }
         </section>
+        </>
     )
 }
