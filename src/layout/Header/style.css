@@ -19,7 +19,6 @@ nav {
 .notify {
     color: white;
     float: left;
-    text-align: center;
     margin-left: 100px;
     font-size: 30px;
 }
@@ -30,7 +29,8 @@ a {
     color: white;
     float: right;
     margin-right: 100px;
-    font-size: 15px;
+    padding-top: 10px;
+    font-size: 20px;
     
 }
 
@@ -43,7 +43,7 @@ a:hover {
 }
 
 .current {
-    color: black;
+    color: #1ED761;
     font-weight: bolder;
 }
 
@@ -54,6 +54,7 @@ a:hover {
     padding:0.5em 3em;
     border:0.16em solid #FFFFFF;
     margin:0 0.3em 0.3em 0;
+    margin-top: 10px;
     box-sizing: border-box;
     text-decoration:none;
     text-transform:uppercase;
