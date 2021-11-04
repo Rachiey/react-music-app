@@ -11,8 +11,6 @@ const artists = [
     { artistName: 'Linkin Park', musicType: 'Rock', intro: 'Linkin Park is an American rock band from Agoura Hills, California.', songTitle: 'numb', showLyrics: false, image: "https://images-eu.ssl-images-amazon.com/images/I/41E27Y6YHXL.__AC_QL70_ML2_.jpg" },
 ]
 
-{/* <div aria-label='lyrics' style={{margin: "10px", color: "#1ED761", whiteSpace: "pre-wrap"}}> */}
-// </div>
 
 export const Artists = () => {
     const renderArtists = () => artists.map((p, i) => {
