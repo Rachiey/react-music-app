@@ -2,16 +2,15 @@ div > div {
     padding: 10px;
     background-color: #1f1818;
     align-items: center;
-    margin: 0 !important;
-
-
-   
+    margin: auto;
     
-  }
+}
+
+
 section {
     margin-top: 100px;
     display: grid;
-    grid-gap: 5px;
+    grid-gap: 10px;
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-evenly;
 }
