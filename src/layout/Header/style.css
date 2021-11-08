@@ -68,3 +68,12 @@ a:hover {
     color:#DDDDDD;
     border-color:#1ED761;
 } 
+
+@media screen and (max-width: 600px) {
+    #back-button {
+        margin-left: 110px;
+        margin-top: 50px !important;
+        font-size: 10px;
+
+    }
+}
